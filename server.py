@@ -5,11 +5,11 @@ import speech_recognition as sr
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/")
-def start():
-    return "this is flask server"
+# @app.route("/")
+# def start():
+#     return "this is flask server"
 
-@app.route("/speech-recognition")
+@app.route("/")
 def speech_recognition():
     try:
         recognizer = sr.Recognizer()
