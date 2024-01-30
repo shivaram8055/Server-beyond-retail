@@ -9,7 +9,7 @@ CORS(app)
 def start():
     return "this is flask server"
 
-@app.route("/speech-recognition", methods=["POST"])
+@app.route("/speech-recognition")
 def speech_recognition():
     try:
         recognizer = sr.Recognizer()
